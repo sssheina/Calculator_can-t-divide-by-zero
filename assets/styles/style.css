@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.background {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    height: 855px;
+    margin: 10px auto;
+    border: 3px solid #FD3B84;
+
+}
+h1 {
+    color: #FD3B84;
+    margin: 100px auto 70px;
+    font-size: 70px;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+}
+
+
+input {
+    display:block;
+    padding:20px;
+    margin: 0 auto;
+    width: 500px;
+    border: 0;
+    box-shadow: 0 0 15px 4px rgba(253,59,132,0.15);
+    border-radius: 10px;
+    color: #FD3B84;
+    font-size: 30px;
+    /* text-align: center; */
+}
+
+input:hover {
+    box-shadow:0 0 4px rgba(253,59,132,0.5);
+    border: 1px solid #FD3B84;
+  }
+
+
+input:focus { 
+    outline: none !important;
+} 
+  input::-webkit-input-placeholder { 
+    color: #FD3B84;
+font-family: Montserrat; 
+}
+  input::-moz-placeholder { 
+    color: #FD3B84; 
+    font-family: Montserrat; 
+}
+
+.arguments {
+    display: flex;
+    flex-direction: column;
+    width: 548px;
+    height: 200px;
+    margin: 10px auto;
+    gap: 15px;
+
+    
+}
+.calculator {
+    display: grid;
+    grid-template-areas: "plus minus multiplication division";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 548px;
+    height: 93px;
+    margin: 0 auto;
+    gap: 50px;
+    padding-top: 70px;
+
+}
+
+.button {
+    background-image: linear-gradient(180deg, #FF8D8B 10%, #FE7489 50%, #FD3B84 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 5%;
+    box-shadow: 0 5px #BC0047;
+    text-align: center;
+    text-decoration: none;
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.button:hover {
+    transform: none;
+    -webkit-transform: translateY(2px);
+    box-shadow: 0 3px #BC0047;
+    text-shadow: 0 0 10px rgba(255,255,255, 1), 0 0 5px rgba(255, 255, 255, .6);
+}
+
+.button:active {
+    transform: none;
+    -webkit-transform: translateY(5px);
+    box-shadow: 0 0 #BC0047;
+}
+
+#result {
+    width: 548px;
+    height: 60px;
+    margin: 0 auto;
+    padding: 70px;
+    text-align: center;
+    font-size: 55px;
+    color: #FD3B84;
+}
